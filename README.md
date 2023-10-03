@@ -12,6 +12,8 @@ Playstore Link:
  -  Implementation of design patterns such as **Observer** and **Singleton** for efficient code organization.
  -  Data management using **PlayerPrefs** and **Scriptable Objects**.
  -  **Object Pooling** to improve performance.
+ -  Different Upgrades with different Price, Carrot per Second and Levels.
+ -  Upgrades costs and rewarding system based on https://blog.kongregate.com/the-math-of-idle-games-part-i/ 
  -  Music & SFX.
 
 ## Video - Gif
