@@ -41,7 +41,7 @@ public class CarrotManager : MonoBehaviour
 
     private void Start()
     {
-        AddCarrots(5000);
+        
     }
 
     private void CarrotClickedCallback()
