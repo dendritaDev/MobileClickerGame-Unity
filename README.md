@@ -11,5 +11,6 @@ Playstore Link:
  -  **Clean code** and a **obust architecture** that simplifies scalability and feature additions.
  -  Implementation of design patterns such as **Observer** and **Singleton** for efficient code organization.
  -  Data management using **PlayerPrefs** and **Scriptable Objects**.
+ -  Music & SFX.
 
 ## Video - Gif
