@@ -18,6 +18,11 @@ Playstore Link:
 
 ## Videos
 
+<div style="display: flex; justify-content: space-between;">
+  <iframe width="45%" src="[URL_VIDEO_1](https://github.com/dendritaDev/MobileClickerGame/blob/main/ClickerVideo2.mp4)"></iframe>
+  <iframe width="45%" src="[URL_VIDEO_2](https://github.com/dendritaDev/MobileClickerGame/blob/main/ClickerVideo1.mp4)"></iframe>
+</div>
+
 
 https://github.com/dendritaDev/MobileClickerGame/assets/107819892/d40359fa-e018-46e5-992d-50c400f0e7dd
 
