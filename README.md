@@ -5,6 +5,8 @@ This project is a mobile clicker game developed in Unity, where players embark o
 Playstore Link:
 
 ## Features
+  - Movement, Animation, Character(stats and Scriptable Object for persistance data container), Management of items, coins,        weapons and experience
+ -  Mostly OnDrawGizmos
   -Click to collect carrots and unlock upgrades.
   -Automatic clickers that produce carrots without manual input.
   -Smooth animations and polished gameplay achieved with a tweening library.
