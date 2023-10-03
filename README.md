@@ -16,4 +16,13 @@ Playstore Link:
  -  Upgrades costs and rewarding system based on https://blog.kongregate.com/the-math-of-idle-games-part-i/ 
  -  Music & SFX.
 
-## Video - Gif
+## Videos
+
+
+https://github.com/dendritaDev/MobileClickerGame/assets/107819892/d40359fa-e018-46e5-992d-50c400f0e7dd
+
+
+
+
+https://github.com/dendritaDev/MobileClickerGame/assets/107819892/46ef43c1-894f-4602-a410-e609c7a0be3f
+
