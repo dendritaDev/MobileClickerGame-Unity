@@ -2,7 +2,7 @@
 ## Description
 This project is a mobile clicker game developed in Unity, where players embark on a fun and addictive journey to collect carrots. In the game, players start by clicking on a carrot to earn more carrots, which can be used to purchase automatic clickers. These clickers work tirelessly in the background, generating carrots automatically, allowing players to amass a carrot empire!
 
-Playstore Link:
+Playstore Link: https://play.google.com/store/apps/details?id=com.DendritaDev.WordFinder
 
 ## Features
  -  Click to collect carrots and unlock upgrades.
