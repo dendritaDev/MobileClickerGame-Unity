@@ -5,18 +5,36 @@ using UnityEngine;
 
 public class UpgradeManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static UpgradeManager instance;
+
+    private void Awake()
+    {
+        if (instance == null)
+            instance = this;
+        else
+            Destroy(gameObject);
+    }
+        // Start is called before the first frame update
+        void Start()
     {
         InvokeRepeating(nameof(AddCarrots), 1, 1);
     }
 
     private void AddCarrots()
     {
+        Debug.Log(GetCarrotsPerSecond());
+
+        double totalCarrots = GetCarrotsPerSecond();
+        CarrotManager.instance.AddCarrots(totalCarrots);
+    }
+
+    public double GetCarrotsPerSecond()
+    {
+
         UpgradeSO[] upgrades = ShopManager.instance.GetUpgrades();
 
-        if (upgrades.Length > 1)
-            return;
+        if (upgrades.Length <= 1)
+            return 0;
 
         double totalCarrots = 0;
 
@@ -26,8 +44,7 @@ public class UpgradeManager : MonoBehaviour
             totalCarrots += upgradeCarrots;
         }
 
-        CarrotManager.instance.AddCarrots(totalCarrots);
+        return totalCarrots;
     }
-
 
 }

@@ -25,11 +25,12 @@ public class InputManager : MonoBehaviour
             ManageTouches();
 
 
-        //if (Input.GetMouseButtonDown(0))
-        //{
-        //    onCarrotClicked?.Invoke();
-        //    onCarrotClickedPosition?.Invoke(Vector2.zero);
-        //}
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            onCarrotClicked?.Invoke();
+            onCarrotClickedPosition?.Invoke(Vector2.zero);
+        }
     }
 
     private void ManageTouches()

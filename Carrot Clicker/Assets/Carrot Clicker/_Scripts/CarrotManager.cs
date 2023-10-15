@@ -39,11 +39,6 @@ public class CarrotManager : MonoBehaviour
         Carrot.onFrenzyModeStopped -= FrenzyModeStoppedCallback;
     }
 
-    private void Start()
-    {
-        
-    }
-
     private void CarrotClickedCallback()
     {
         totalCarrotsCount +=carrotIncrement;
@@ -53,9 +48,7 @@ public class CarrotManager : MonoBehaviour
 
     public void AddCarrots(float value)
     {
-        totalCarrotsCount += value;
-        UpdateCarrotsText();
-        SaveData();
+        AddCarrots((double)value);
     }
 
     public void AddCarrots(double value)
@@ -88,7 +81,13 @@ public class CarrotManager : MonoBehaviour
 
     private void UpdateCarrotsText()
     {
-        carrotsText.text = totalCarrotsCount.ToString("F0") + " Carrots!";
+        carrotsText.text = DoubleUtilities.ToCustomScientificNotation(totalCarrotsCount) + " Carrots!";
+    }
+
+    private void Update()
+    {
+        if(Input.GetKeyUp(KeyCode.Escape))
+            AddCarrots(totalCarrotsCount);
     }
 
     internal int GetCurrentMultiplier()
