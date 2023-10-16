@@ -6,6 +6,8 @@ Playstore Link:
 ## Features
  -  Click to collect carrots and unlock upgrades.
  -  **Automatic clickers** that produce carrots without manual input.
+ -  **Offline Earnings**
+ -  **Daily Rewards**
  -  Smooth animations and polished gameplay achieved with a **tweening library**.
  -  **Clean code** and a **obust architecture** that simplifies scalability and feature additions.
  -  Implementation of design patterns such as **Observer** and **Singleton** for efficient code organization.
