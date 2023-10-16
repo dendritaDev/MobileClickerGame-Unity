@@ -10,9 +10,11 @@ public class CarrotManager : MonoBehaviour
 
     [Header(" Elements ")]
     [SerializeField] private TextMeshProUGUI carrotsText;
+    [SerializeField] private TextMeshProUGUI cpsText;
 
     [Header(" Data ")]
     [SerializeField] private double totalCarrotsCount;
+    private double previousCarrotsCount;
     [SerializeField] private int frenzyModeMultiplier;
     private int carrotIncrement;
 
@@ -31,7 +33,10 @@ public class CarrotManager : MonoBehaviour
         Carrot.onFrenzyModeStarted += FrenzyModeStartedCallback;
         Carrot.onFrenzyModeStopped += FrenzyModeStoppedCallback;
     }
-
+    private void Start()
+    {
+        InvokeRepeating(nameof(UpdateCPSText), 0, 1);
+    }
     private void OnDestroy()
     {
         InputManager.onCarrotClicked -= CarrotClickedCallback;
@@ -93,6 +98,18 @@ public class CarrotManager : MonoBehaviour
     internal int GetCurrentMultiplier()
     {
         return carrotIncrement;
+    }
+
+    private void UpdateCPSText()
+    {
+        double cps = totalCarrotsCount - previousCarrotsCount;
+
+        if (cps < 0)
+            cps = UpgradeManager.instance.GetCarrotsPerSecond();
+
+        cpsText.text = DoubleUtilities.ToCustomScientificNotation(cps) + "cps";
+
+        previousCarrotsCount = totalCarrotsCount;
     }
 
     internal bool TryPurchase(double price)

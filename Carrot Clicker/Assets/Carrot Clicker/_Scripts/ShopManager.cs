@@ -82,6 +82,14 @@ public class ShopManager : MonoBehaviour
 
     }
 
+    public void RewardUpgrade(int upgradeIndex, int levels)
+    {
+        for (int i = 0; i < levels; i++)
+        {
+            IncraseUpgradeLevel(upgradeIndex);
+        }
+    }
+    
     private void UpdateVisuals(int upgradeIndex)
     {
         UpgradeButton upgradeButton = upgradeButtonsParent.GetChild(upgradeIndex).GetComponent<UpgradeButton>();

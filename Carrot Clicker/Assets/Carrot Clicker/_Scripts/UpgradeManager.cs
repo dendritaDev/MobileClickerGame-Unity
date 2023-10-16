@@ -7,17 +7,22 @@ public class UpgradeManager : MonoBehaviour
 {
     public static UpgradeManager instance;
 
+    [Header("Settings")]
+    [Tooltip("Value in hertz")]
+    [SerializeField] private int addCarrotsFrequency;
+
     private void Awake()
     {
         if (instance == null)
             instance = this;
         else
             Destroy(gameObject);
+
     }
         // Start is called before the first frame update
         void Start()
     {
-        InvokeRepeating(nameof(AddCarrots), 1, 1);
+        InvokeRepeating(nameof(AddCarrots), 1, 1f / addCarrotsFrequency); //En vez de llamarlo cada segundo, lo llamamos mas pero tambien disminuimos el valor en addcarrots que suma por este mismo, para compensar
     }
 
     private void AddCarrots()
@@ -25,7 +30,7 @@ public class UpgradeManager : MonoBehaviour
         Debug.Log(GetCarrotsPerSecond());
 
         double totalCarrots = GetCarrotsPerSecond();
-        CarrotManager.instance.AddCarrots(totalCarrots);
+        CarrotManager.instance.AddCarrots(totalCarrots / addCarrotsFrequency);
     }
 
     public double GetCarrotsPerSecond()
