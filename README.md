@@ -29,11 +29,10 @@ https://github.com/dendritaDev/MobileClickerGame/assets/107819892/46ef43c1-894f-
 
 ## Images
 
-<div style="width: 500px;">
-    <img src="https://github.com/dendritaDev/MobileClickerGame/assets/107819892/4da38193-1445-4a7e-923d-108d291e4401" alt="Daily Rewards" width="50%">
-    <img src="https://github.com/dendritaDev/MobileClickerGame/assets/107819892/9bfaf313-e37b-41ff-8899-e429375bfcdb" alt="Offline Earnings" width="50%">
+<div style="display: flex;">
+  <img src="https://github.com/dendritaDev/MobileClickerGame/assets/107819892/4da38193-1445-4a7e-923d-108d291e4401" width="50%">
+  <img src="https://github.com/dendritaDev/MobileClickerGame/assets/107819892/9bfaf313-e37b-41ff-8899-e429375bfcdb" width="50%">
 </div>
-
 
 ## Images
 ![DailyRewards-Clicker](https://github.com/dendritaDev/MobileClickerGame/assets/107819892/4da38193-1445-4a7e-923d-108d291e4401)
